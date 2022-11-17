@@ -8,7 +8,7 @@ var Hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
 var Minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 var Seconds = Math.floor((t % (1000 * 60)) / 1000);
 document.getElementById("lunch&learn").innerHTML = Days + "d " 
-+ Hours + "h " + Minutes + "m " + Seconds + "s ";
++ Hours + "h " + Minutes + "m " + Seconds + "s";
     if (t < 0) {
         clearInterval(x);
         document.getElementById("lunch&learn").innerHTML = "Looks like you've missed the Nov 18, 2022 live lunch and learn. No worries! You check Microvere's YouTube channel for a recording of the event!";
@@ -18,7 +18,17 @@ document.getElementById("lunch&learn").innerHTML = Days + "d "
 
 </script>
 
-<h1>Microverse Lunch & Learn</h1>
-<p>Friday Nov, 18th 2022</p>
-        
-<p id="lunch&learn"></p>
+<div class="outerBox">
+  <div class="innerBox">
+    <img class="e-banner" src="https://res.cloudinary.com/webdevjunior/image/upload/v1668704581/Treasure_ecoirs.png"  alt="event-banner">
+   
+    <h1>Microverse Lunch & Learn</h1>
+    <p>Date: Friday Nov, 18th 2022</p>
+    
+    <h4>Time Remaining:</h4>
+    <p class="timeRemaining" id="lunch&learn"></p>
+
+    <p class="register"><a class="button" href="https://microverse.zoom.us/webinar/register/6916661261096/WN_qVYkFOoLSbq8WXeAjiJSLw">Register now! <a/> <p/>
+
+  </div>
+</div>
